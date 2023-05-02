@@ -1,0 +1,5 @@
+
+input[type="text"], input[type="number"] {
+    display: block;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,7 @@
+CREATE TABLE consolas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Consola VARCHAR(255) NOT NULL,
+    Precio_Minimo DECIMAL(10, 2) NOT NULL,
+    Precio_Maximo DECIMAL(10, 2) NOT NULL,
+    Descuento DECIMAL(5, 2) NOT NULL
+);

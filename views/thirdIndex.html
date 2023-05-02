@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNOLOGY ENTERTAINMENT</title>
+    <!-- Incluye Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #343a40;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .form-label {
+            color: #ffffff;
+        }
+        .navbar-brand span {
+            font-size: 2.8rem; /* Ajusta el valor según tus preferencias */
+            font-weight: bold;
+            color: red;
+        }
+        .navbar-brand span:nth-child(2n) {
+            font-size: 2.8rem; /* Ajusta el valor según tus preferencias */
+            color: blue;
+        }
+        .navbar-brand span:nth-child(3n) {
+            font-size: 2.8rem; /* Ajusta el valor según tus preferencias */
+            color: green;
+        }
+        .navbar-brand span:nth-child(4n) {
+            font-size: 2.8rem; /* Ajusta el valor según tus preferencias */
+            color: yellow;
+        }
+        .nav-link {
+            transition: background-color 0.3s ease;
+            color: white;
+            background-color: black;
+        }
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="#"><span>V</span><span>I</span><span>D</span><span>E</span><span>O</span> <span>J</span><span>U</span><span>E</span><span>G</span><span>O</span><span>S</span></a>
+        </div>
+    </nav>
+
+    <!-- Entradas -->
+    <div class="form-container">
+        <h2 class="form-title">DESCUENTOS DISPONIBLES</h2>
+
+            <div class="mb-3">
+                <label for="input1" class="form-label">Referencia</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Escribe aquí...">
+            </div>
+            <div class="mb-3">
+                <label for="input2" class="form-label">Valor</label>
+                <input type="number" class="form-control" id="valor" placeholder="Escribe aquí...">
+            </div>
+            <button class="btn btn-primary" onclick="calcularDescuento()">Enviar</button>
+            <div id="resultado"></div>
+            <BR>
+            <h2 class="form-title">SUMA DESCUENTOS</h2>
+            <button class="btn btn-primary" onclick="obtenerSumaDescuentos()">Obtener suma</button>
+            <div id="suma_descuentos"></div>
+
+
+    </div>
+
+    <!-- Incluye Bootstrap JS y sus dependencias -->
+    <script src="../js/logica.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+</body>
+</html>
